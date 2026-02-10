@@ -1,6 +1,10 @@
-import type { SkillCategory } from '../types';
+export interface SkillCategoryData {
+  category: string;
+  icon: string;
+  skills: string[];
+}
 
-export const skillsData: Omit<SkillCategory, 'icon'> & { icon: string }[] = [
+export const skillsData: SkillCategoryData[] = [
   {
     category: 'Application Security',
     icon: 'Shield',
